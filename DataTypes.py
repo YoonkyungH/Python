@@ -14,3 +14,7 @@ print('작은 따옴표')
 print("I\'m \"excited\" to learn Python!")
 print("Hello" + "World")
 print("Hello" * 3)
+
+# type conversion(casting)
+age = 7
+print("제 나이는 " + str(age) + "살입니다.")
