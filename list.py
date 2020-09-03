@@ -30,7 +30,41 @@ print()
 print(numbers.sort())  # sort는 아무것도 return하지 않음. 리스트 자체만 정렬
 numbers.sort()
 print(numbers)  # 이렇게 해야 원하는 결과를 얻을 수 있음
-numbers.sort(revers=True)  # 이렇게 하면 거꾸로 정렬
+print()
+# numbers.sort(revers=True)  # 이렇게 하면 거꾸로 정렬
 
 # sorted : 기존 리스트는 건드리지 않고, 정렬된 새로운 리스트를 리턴
 # sort : 아무것도 리턴하지 않고, 기존 리스트를 정렬
+
+
+# list 안에 원하는 값의 여부 확인하기
+primes = [2, 3, 5, 7, 11]
+print(7 in primes)
+print(1 in primes)
+print()
+print(3 not in primes) # 값이 없는지 확인
+print()
+
+# Nested List 리스트 안의 리스트
+grades = [[62, 75, 77], [78, 81, 86], [85, 91, 89]]
+print(grades[0])
+print(grades[1][2])
+print()
+
+# sort, reverse 메소드
+numbers = [5, 3, 7, 1]
+numbers.sort()
+print(numbers)
+numbers.reverse()
+print(numbers)
+print()
+
+# index 메소드
+numbers = ["래완", "선호"]
+print(numbers.index("선호"))
+print()
+
+# remove 메소드
+fruits = ["딸기", "귤", "자두"]
+fruits.remove("귤")
+print(fruits)
