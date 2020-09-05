@@ -29,3 +29,21 @@ for a in range(1, 1000):
             print(a * b * c)
 
 print()
+
+
+# 리스트 뒤집기
+numbers = [2, 3, 5, 7, 11, 13, 17, 19]
+
+numbers.sort(reverse=True)
+
+print("뒤집어진 리스트: " + str(numbers))
+
+# 모범답안
+numbers = [2, 3, 5, 7, 11, 13, 17, 19]
+
+for left in range(len(numbers) // 2):
+    right = len(numbers) - left - 1  # 인덱스 left와 대칭인 인덱스 right 계산
+    numbers[right], numbers[left] = numbers[left], numbers[right]  # 위치 바꾸기
+
+print("뒤집어진 리스트: " + str(numbers))
+print()
