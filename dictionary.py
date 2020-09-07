@@ -18,3 +18,35 @@ my_family = {
     '오빠': '석'
 }
 print(my_family['엄마'])
+
+
+# 사전 활용법
+my_family = {
+    '엄마': '경',
+    '아빠': '택',
+    '오빠': '석'
+}
+
+print(my_family.values())
+print('경' in my_family.values())  # 원소가 존재하는지 확인
+
+for value in my_family.values():  # 모든 value 출력하기
+    print(value)
+
+
+print(my_family.keys())
+
+print()
+for key in my_family.keys():  # 모든 key 출력하기
+    print(key)
+
+
+print()
+for key in my_family.keys():  # key와 value 출력하기
+    value = my_family[key]
+    print(key, value)
+
+
+print()
+for key, value in my_family.items():  # key와 value 출력하기
+    print(key, value)
