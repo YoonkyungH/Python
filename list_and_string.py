@@ -1,5 +1,5 @@
 alphabet_list = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
-print(alphabet_list[-1])
+print(alphabet_list[-1])  # 음수 인덱스는 뒤에서부터 접근
 # 알파벳 리스트의 슬라이싱
 print(alphabet_list[0:5])
 print(alphabet_list[4:])
